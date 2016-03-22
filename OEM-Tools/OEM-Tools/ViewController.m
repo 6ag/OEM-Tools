@@ -132,7 +132,7 @@
             break;
         case 5:
             [self setupSuyitong];
-            break;	
+            break;
         case 6:
             [self setupYunfutong];
             break;
@@ -253,6 +253,14 @@
         [self.results addObject:[NSString stringWithFormat:@"替换【渠道标识】OK"]];
     } else {
         [self.results addObject:[NSString stringWithFormat:@"替换【渠道标识】NO"]];
+    }
+    
+    // 替换appName
+    if ([self replaceConfigStringWithSrc:configFile_path Pattern:@"(?<=#define appName )(@\"(.*?)\")" template:[NSString stringWithFormat:@"@\"%@\"", self.appNameField.stringValue]]) {
+        // 成功后加入数据源数组
+        [self.results addObject:[NSString stringWithFormat:@"替换【app名称】OK"]];
+    } else {
+        [self.results addObject:[NSString stringWithFormat:@"替换【app名称】NO"]];
     }
     
     // 替换APP域名
