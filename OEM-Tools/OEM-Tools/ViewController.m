@@ -84,7 +84,7 @@
     
     // 初始化配置项
     [self.OEMSelectPopUpButton selectItemAtIndex:0];
-    [self didSelectPopUpButton:self.OEMSelectPopUpButton];
+//    [self didSelectPopUpButton:self.OEMSelectPopUpButton];
 }
 
 /**
@@ -125,15 +125,12 @@
             [self setupKakaleshua];
             break;
         case 3:
-            [self setupLiangzi];
+            [self setupChengqianbao];
             break;
         case 4:
-            [self setupPengcheng];
-            break;
-        case 5:
             [self setupSuyitong];
             break;
-        case 6:
+        case 5:
             [self setupYunfutong];
             break;
         default:
@@ -631,43 +628,23 @@
 }
 
 /**
- *  量子配置项
+ *  诚钱包配置
  */
-- (void)setupLiangzi
+- (void)setupChengqianbao
 {
     self.appVersionField.stringValue = @"2.0.0";
-    self.appBundleIdentifierField.stringValue = @"com.aiarm.liangzi";
-    self.channelIdentifierField.stringValue = @"4";
-    self.appNameField.stringValue = @"量子支付";
-    self.appDomainField.stringValue = @"liangzi.alllpay.com";
+    self.appBundleIdentifierField.stringValue = @"com.aiarm.chengqiaobao";
+    self.channelIdentifierField.stringValue = @"8";
+    self.appNameField.stringValue = @"诚钱包";
+    self.appDomainField.stringValue = @"";
     self.appTelephoneField.stringValue = @"400-000-000";
-    self.homeTitleField.stringValue = @"量子支付";
+    self.homeTitleField.stringValue = @"诚钱包";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/liangzi/";
-    self.ipaNameField.stringValue = @"liangzi";
-    self.profileNameField.stringValue = @"liangzi_distribution";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/chengqianbao/";
+    self.ipaNameField.stringValue = @"chengqianbao";
+    self.profileNameField.stringValue = @"chengqianbao_distribution";
     
-    [self reSetupFieldWithSignString:@"liangzi"];
-}
-
-/**
- *  鹏程i付配置项
- */
-- (void)setupPengcheng
-{
-    self.appVersionField.stringValue = @"2.0.0";
-    self.appBundleIdentifierField.stringValue = @"com.aiarm.pengcheng";
-    self.channelIdentifierField.stringValue = @"5";
-    self.appNameField.stringValue = @"鹏程i付";
-    self.appDomainField.stringValue = @"www.xmpc360.com";
-    self.appTelephoneField.stringValue = @"400-000-000";
-    self.homeTitleField.stringValue = @"鹏程i付";
-    self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/pengcheng/";
-    self.ipaNameField.stringValue = @"pengcheng";
-    self.profileNameField.stringValue = @"pengcheng_distribution";
-    
-    [self reSetupFieldWithSignString:@"pengcheng"];
+    [self reSetupFieldWithSignString:@"chengqianbao"];
 }
 
 /**

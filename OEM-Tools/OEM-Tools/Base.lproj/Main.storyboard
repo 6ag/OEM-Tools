@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -709,11 +709,11 @@
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.5" horizontal="YES" id="WMr-WH-lds">
-                                    <rect key="frame" x="1" y="7" width="0.0" height="16"/>
+                                    <rect key="frame" x="-7" y="8" width="0.0" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Ybd-bB-AfR">
-                                    <rect key="frame" x="-15" y="23" width="16" height="0.0"/>
+                                    <rect key="frame" x="-14" y="15" width="15" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="gAZ-ZC-EgN">
@@ -925,12 +925,12 @@
                                                 </textField>
                                                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTk-1A-P2Y">
                                                     <rect key="frame" x="202" y="399" width="206" height="26"/>
-                                                    <popUpButtonCell key="cell" type="push" title="滴付" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="iXB-ak-k6y" id="yEp-Co-djw">
+                                                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="yEp-Co-djw">
                                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="menu"/>
                                                         <menu key="menu" id="7E1-8W-4Q0">
                                                             <items>
-                                                                <menuItem title="滴付" state="on" id="iXB-ak-k6y">
+                                                                <menuItem title="滴付" id="iXB-ak-k6y">
                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                 </menuItem>
                                                                 <menuItem title="聚米" id="hjR-al-5eb">
@@ -939,10 +939,7 @@
                                                                 <menuItem title="卡卡乐刷" id="VIT-Qh-dBC">
                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                 </menuItem>
-                                                                <menuItem title="量子支付" id="xkD-Mq-RdM">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                </menuItem>
-                                                                <menuItem title="鹏程i付" id="Tg6-lf-8WY">
+                                                                <menuItem title="诚钱包" id="xkD-Mq-RdM">
                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                 </menuItem>
                                                                 <menuItem title="速易通" id="EC7-hh-yhn">
