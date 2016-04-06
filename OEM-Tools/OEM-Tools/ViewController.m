@@ -580,7 +580,7 @@
     self.appTelephoneField.stringValue = @"400-615-8825";
     self.homeTitleField.stringValue = @"滴付-理财版";
     self.weixinAccountField.stringValue = @"aiarmpay";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/difu/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/difu/";
     self.ipaNameField.stringValue = @"difu";
     self.profileNameField.stringValue = @"mypaychinaapp";
     
@@ -600,7 +600,7 @@
     self.appTelephoneField.stringValue = @"400-808-7079";
     self.homeTitleField.stringValue = @"聚米-理财版";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/jumi/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/jumi/";
     self.ipaNameField.stringValue = @"jumi";
     self.profileNameField.stringValue = @"jumi_distribution";
     
@@ -620,7 +620,7 @@
     self.appTelephoneField.stringValue = @"400-036-6772";
     self.homeTitleField.stringValue = @"卡卡乐刷";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/kakaleshua/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/kakaleshua/";
     self.ipaNameField.stringValue = @"kakaleshua";
     self.profileNameField.stringValue = @"kakale_distribution";
     
@@ -637,10 +637,10 @@
     self.channelIdentifierField.stringValue = @"8";
     self.appNameField.stringValue = @"诚钱包";
     self.appDomainField.stringValue = @"";
-    self.appTelephoneField.stringValue = @"400-000-000";
+    self.appTelephoneField.stringValue = @"400-6649-666";
     self.homeTitleField.stringValue = @"诚钱包";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/chengqianbao/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/chengqianbao/";
     self.ipaNameField.stringValue = @"chengqianbao";
     self.profileNameField.stringValue = @"chengqianbao_distribution";
     
@@ -660,7 +660,7 @@
     self.appTelephoneField.stringValue = @"400-683-6985";
     self.homeTitleField.stringValue = @"速易通";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/suyitong/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/suyitong/";
     self.ipaNameField.stringValue = @"suyitong";
     self.profileNameField.stringValue = @"suyitong_distribution";
     
@@ -680,7 +680,7 @@
     self.appTelephoneField.stringValue = @"400-085-3882";
     self.homeTitleField.stringValue = @"云付通";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material_test/yunfutong/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/yunfutong/";
     self.ipaNameField.stringValue = @"yunfutong";
     self.profileNameField.stringValue = @"yunfutong_distribution";
     
