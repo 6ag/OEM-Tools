@@ -23,4 +23,12 @@
     // Insert code here to tear down your application
 }
 
+/**
+ *  点击窗口关闭按钮结束应用程序
+ */
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    return YES;
+}
+
 @end

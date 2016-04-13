@@ -82,9 +82,8 @@
 {
     [super viewDidLoad];
     
-    // 初始化配置项
-    [self.OEMSelectPopUpButton selectItemAtIndex:0];
-//    [self didSelectPopUpButton:self.OEMSelectPopUpButton];
+    // 设置默认值
+    [self setupOENConfigWithItem:0];
 }
 
 /**
@@ -114,7 +113,18 @@
 - (IBAction)didSelectPopUpButton:(NSPopUpButtonCell *)button
 {
     // 根据选择OEM，初始化默认配置
-    switch (button.indexOfSelectedItem) {
+    [self setupOENConfigWithItem:button.indexOfSelectedItem];
+    
+    // 替换配置
+    [self setupAllConfig];
+}
+
+/**
+ *  设置OEM
+ */
+- (void)setupOENConfigWithItem:(NSInteger)item
+{
+    switch (item) {
         case 0:
             [self setupDifu];
             break;
@@ -136,10 +146,7 @@
         default:
             break;
     }
-    
-    // 替换配置
-    [self setupAllConfig];
-    
+
 }
 
 /**
@@ -580,7 +587,7 @@
     self.appTelephoneField.stringValue = @"400-615-8825";
     self.homeTitleField.stringValue = @"滴付-理财版";
     self.weixinAccountField.stringValue = @"aiarmpay";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/difu/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/difu/";
     self.ipaNameField.stringValue = @"difu";
     self.profileNameField.stringValue = @"mypaychinaapp";
     
@@ -600,7 +607,7 @@
     self.appTelephoneField.stringValue = @"400-808-7079";
     self.homeTitleField.stringValue = @"聚米-理财版";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/jumi/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/jumi/";
     self.ipaNameField.stringValue = @"jumi";
     self.profileNameField.stringValue = @"jumi_distribution";
     
@@ -620,7 +627,7 @@
     self.appTelephoneField.stringValue = @"400-036-6772";
     self.homeTitleField.stringValue = @"卡卡乐刷";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/kakaleshua/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/kakaleshua/";
     self.ipaNameField.stringValue = @"kakaleshua";
     self.profileNameField.stringValue = @"kakale_distribution";
     
@@ -640,11 +647,11 @@
     self.appTelephoneField.stringValue = @"400-6649-666";
     self.homeTitleField.stringValue = @"诚钱包";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/chengqianbao/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/chengqianbao/";
     self.ipaNameField.stringValue = @"chengqianbao";
-    self.profileNameField.stringValue = @"chengqianbao_distribution";
+    self.profileNameField.stringValue = @"chengqiaobao_distribution";
     
-    [self reSetupFieldWithSignString:@"chengqianbao"];
+    [self reSetupFieldWithSignString:@"chengqiaobao"];
 }
 
 /**
@@ -660,7 +667,7 @@
     self.appTelephoneField.stringValue = @"400-683-6985";
     self.homeTitleField.stringValue = @"速易通";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/suyitong/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/suyitong/";
     self.ipaNameField.stringValue = @"suyitong";
     self.profileNameField.stringValue = @"suyitong_distribution";
     
@@ -680,7 +687,7 @@
     self.appTelephoneField.stringValue = @"400-085-3882";
     self.homeTitleField.stringValue = @"云付通";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM_source_material/yunfutong/";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/yunfutong/";
     self.ipaNameField.stringValue = @"yunfutong";
     self.profileNameField.stringValue = @"yunfutong_distribution";
     
@@ -692,7 +699,7 @@
  */
 - (void)reSetupFieldWithSignString:(NSString *)signString
 {
-    self.projectLabel.stringValue = @"file:///Users/feng/Desktop/PayChinaPospIOS_test/PayChinaPospIOS/";
+    self.projectLabel.stringValue = @"file:///Users/feng/Work/PayChinaPospIOS/PayChinaPospIOS/";
     self.exportPathLabel.stringValue = @"file:///Users/feng/Desktop/";
     self.keychainPasswordField.stringValue = @"44334512";
     self.currentUserNameField.stringValue = @"feng";
