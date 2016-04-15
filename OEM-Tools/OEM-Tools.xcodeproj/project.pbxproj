@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B29BFCF21CC0E5F3007EEC0F /* archive.sh in Resources */ = {isa = PBXBuildFile; fileRef = B29BFCF11CC0E5F3007EEC0F /* archive.sh */; };
 		B29EC2BD1C96BF510011983A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B29EC2BC1C96BF510011983A /* AppDelegate.m */; };
 		B29EC2C01C96BF510011983A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B29EC2BF1C96BF510011983A /* main.m */; };
 		B29EC2C31C96BF510011983A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29EC2C21C96BF510011983A /* ViewController.m */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B29BFCF11CC0E5F3007EEC0F /* archive.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = archive.sh; sourceTree = "<group>"; };
 		B29EC2B81C96BF510011983A /* OEM-Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OEM-Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29EC2BB1C96BF510011983A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B29EC2BC1C96BF510011983A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				B29EC2C41C96BF510011983A /* Assets.xcassets */,
 				B29EC2C61C96BF510011983A /* Main.storyboard */,
 				B29EC2C91C96BF510011983A /* Info.plist */,
+				B29BFCF11CC0E5F3007EEC0F /* archive.sh */,
 				B29EC2BE1C96BF510011983A /* Supporting Files */,
 			);
 			path = "OEM-Tools";
@@ -161,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29BFCF21CC0E5F3007EEC0F /* archive.sh in Resources */,
 				B29EC2C51C96BF510011983A /* Assets.xcassets in Resources */,
 				B29EC2C81C96BF510011983A /* Main.storyboard in Resources */,
 			);

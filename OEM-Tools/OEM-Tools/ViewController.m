@@ -36,7 +36,6 @@
 
 #define InfoPlist @"PayChinaPospIOS/Info.plist"
 #define configFle @"PayChinaPospIOS/Classes/Application/Common.h"
-#define packageScript @"archive.sh"
 
 #define app_logo_path [NSString stringWithFormat:@"PayChinaPospIOS/Assets.xcassets/OEM/%@.imageset/",[app_logo substringWithRange:NSMakeRange(0, app_logo.length - 7)]]
 #define app_name_path [NSString stringWithFormat:@"PayChinaPospIOS/Assets.xcassets/OEM/%@.imageset/",[app_name substringWithRange:NSMakeRange(0, app_name.length - 7)]]
@@ -310,7 +309,7 @@
     }
     
     // 打包脚本路径
-    NSString *scriptPath = [self.projectLabel.stringValue stringByAppendingString:packageScript];
+    NSString *scriptPath = [NSString stringWithFormat:@"file://%@", [[NSBundle mainBundle] pathForResource:@"archive" ofType:@"sh"]];
     
     // ipa包名
     if ([self replaceConfigStringWithSrc:scriptPath Pattern:@"(?<=IPA_NAME=)(\"(.*?)\")" template:[NSString stringWithFormat:@"\"%@%@\"",self.ipaNameField.stringValue, self.appVersionField.stringValue]]) {
@@ -394,11 +393,11 @@
     [DJProgressHUD showStatus:@"正在打包，请稍等片刻..." FromView:self.view];
     // 执行打包操作
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSString *path = [self.projectLabel.stringValue stringByAppendingString:packageScript];
+        NSString *packScriptPath = [[NSBundle mainBundle] pathForResource:@"archive" ofType:@"sh"];
         NSError *error = nil;
-        NSString *commandString = [NSString stringWithContentsOfFile:[self getPathWithfileString:path] encoding:NSUTF8StringEncoding error:&error];
+        NSString *commandString = [NSString stringWithContentsOfFile:packScriptPath encoding:NSUTF8StringEncoding error:&error];
         system([commandString UTF8String]);
-        NSLog(@"path = %@",path);
+        NSLog(@"packScriptPath = %@",packScriptPath);
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [DJProgressHUD dismiss];
@@ -422,12 +421,11 @@
         [self.OEMSelectPopUpButton selectItemAtIndex:i];
         [self didSelectPopUpButton:self.OEMSelectPopUpButton];
         
-        
-        NSString *path = [self.projectLabel.stringValue stringByAppendingString:packageScript];
+        NSString *packScriptPath = [[NSBundle mainBundle] pathForResource:@"archive" ofType:@"sh"];
         NSError *error = nil;
-        NSString *commandString = [NSString stringWithContentsOfFile:[self getPathWithfileString:path] encoding:NSUTF8StringEncoding error:&error];
+        NSString *commandString = [NSString stringWithContentsOfFile:packScriptPath encoding:NSUTF8StringEncoding error:&error];
         system([commandString UTF8String]);
-        NSLog(@"path = %@",path);
+        NSLog(@"packScriptPath = %@",packScriptPath);
     }
     [DJProgressHUD dismiss];
     
