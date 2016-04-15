@@ -53,7 +53,7 @@
 @property (weak) IBOutlet NSTextField *appNameField;
 @property (weak) IBOutlet NSTextField *appBundleIdentifierField;
 @property (weak) IBOutlet NSTextField *appVersionField;
-@property (weak) IBOutlet NSTextField *channelIdentifierField; // 渠道标识 1、滴付 2、速易通 3、聚米 4、量子支付 5、鹏程i付 6、云付通 7、卡卡乐刷
+@property (weak) IBOutlet NSTextField *channelIdentifierField; // 渠道标识 1、嘀付 2、速易通 3、聚米 4、量子支付 5、鹏程i付 6、云付通 7、卡卡乐刷
 @property (weak) IBOutlet NSTextField *appDomainField;
 @property (weak) IBOutlet NSTextField *appTelephoneField;
 @property (weak) IBOutlet NSTextField *homeTitleField;
@@ -68,6 +68,8 @@
 @property (weak) IBOutlet NSTextField *keychainPasswordField;
 @property (weak) IBOutlet NSTextField *currentUserNameField;
 @property (weak) IBOutlet NSTextField *currentPasswordField;
+
+@property (weak) IBOutlet NSPopUpButtonCell *selectOEMButton;
 
 @property (weak) IBOutlet NSTableView *tableView;
 @property (nonatomic, strong) NSMutableArray *results;      // 操作信息
@@ -575,17 +577,17 @@
 
 #pragma mark - OEM默认配置
 /**
- *  滴付配置项
+ *  嘀付配置项
  */
 - (void)setupDifu
 {
     self.appVersionField.stringValue = @"2.0.0";
     self.appBundleIdentifierField.stringValue = @"com.aiarm.www";
     self.channelIdentifierField.stringValue = @"1";
-    self.appNameField.stringValue = @"滴付";
+    self.appNameField.stringValue = @"嘀付";
     self.appDomainField.stringValue = @"www.xy35.com";
     self.appTelephoneField.stringValue = @"400-615-8825";
-    self.homeTitleField.stringValue = @"滴付-理财版";
+    self.homeTitleField.stringValue = @"嘀付-理财版";
     self.weixinAccountField.stringValue = @"aiarmpay";
     self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/difu/";
     self.ipaNameField.stringValue = @"difu";
@@ -712,12 +714,33 @@
 }
 
 /**
+ *  重置配置
+ */
+- (IBAction)resetData:(NSButton *)sender
+{
+    NSAlert *alert = [NSAlert alertWithMessageText:@"您确定要重置所有配置吗？" defaultButton:@"确定" alternateButton:@"取消" otherButton:nil informativeTextWithFormat:@"重置后会恢复默认配置"];
+    
+    if([alert runModal] == NSAlertDefaultReturn) {
+        NSArray *array = @[@"difu", @"jumi", @"kakaleshua", @"chengqiaobao", @"suyitong", @"yunfutong"];
+        for (NSString *signString in array) {
+            [[NSUserDefaults standardUserDefaults] setObject:nil forKey:signString];
+        }
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"commonConfig"];
+        
+        // 恢复当前选择的OEM默认设置
+        [self didSelectPopUpButton:self.selectOEMButton];
+    }
+    
+}
+
+/**
  *  根据标识符来获取配置
  */
 - (void)getData
 {
     // 判断本地是否有缓存数据，如果有则加载缓存，没有则赋值默认值
     NSDictionary *dict = [[NSUserDefaults standardUserDefaults] objectForKey:self.signString];
+    
     // 如果有缓存数据就用缓存数据
     if (dict) {
         self.appVersionField.stringValue = dict[@"appVersionField"];
