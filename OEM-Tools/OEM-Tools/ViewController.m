@@ -709,7 +709,7 @@
     self.channelIdentifierField.stringValue = @"9";
     self.appNameField.stringValue = @"势刷支付";
     self.appDomainField.stringValue = @"shishua.alllpay.com";
-    self.appTelephoneField.stringValue = @"400-000-0000";
+    self.appTelephoneField.stringValue = @"400-965-7977";
     self.homeTitleField.stringValue = @"势刷支付";
     self.weixinAccountField.stringValue = @"";
     self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/shishua/";
