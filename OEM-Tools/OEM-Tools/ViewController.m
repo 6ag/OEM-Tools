@@ -14,6 +14,8 @@
 // 文件协议头长度
 #define delegateLength 7
 
+#define defaultVersion @"2.0.6"
+
 #define projectIconPrefix @"PayChinaPospIOS/Assets.xcassets/AppIcon.appiconset/"
 #define projectLaunchPrefix @"PayChinaPospIOS/Assets.xcassets/Brand Assets.launchimage/"
 
@@ -144,10 +146,13 @@
         case 5:
             [self setupYunfutong];
             break;
+        case 6:
+            [self setupShishua];
+            break;
         default:
             break;
     }
-
+    
 }
 
 /**
@@ -579,7 +584,7 @@
  */
 - (void)setupDifu
 {
-    self.appVersionField.stringValue = @"2.0.0";
+    self.appVersionField.stringValue = defaultVersion;
     self.appBundleIdentifierField.stringValue = @"com.aiarm.www";
     self.channelIdentifierField.stringValue = @"1";
     self.appNameField.stringValue = @"嘀付";
@@ -599,7 +604,7 @@
  */
 - (void)setupJumi
 {
-    self.appVersionField.stringValue = @"2.0.3";
+    self.appVersionField.stringValue = defaultVersion;
     self.appBundleIdentifierField.stringValue = @"com.aiarm.jumi";
     self.channelIdentifierField.stringValue = @"3";
     self.appNameField.stringValue = @"聚米";
@@ -619,7 +624,7 @@
  */
 - (void)setupKakaleshua
 {
-    self.appVersionField.stringValue = @"2.0.0";
+    self.appVersionField.stringValue = defaultVersion;
     self.appBundleIdentifierField.stringValue = @"com.aiarm.kakale";
     self.channelIdentifierField.stringValue = @"7";
     self.appNameField.stringValue = @"卡卡乐刷";
@@ -639,7 +644,7 @@
  */
 - (void)setupChengqianbao
 {
-    self.appVersionField.stringValue = @"2.0.0";
+    self.appVersionField.stringValue = defaultVersion;
     self.appBundleIdentifierField.stringValue = @"com.aiarm.chengqiaobao";
     self.channelIdentifierField.stringValue = @"8";
     self.appNameField.stringValue = @"诚钱包";
@@ -659,7 +664,7 @@
  */
 - (void)setupSuyitong
 {
-    self.appVersionField.stringValue = @"2.0.0";
+    self.appVersionField.stringValue = defaultVersion;
     self.appBundleIdentifierField.stringValue = @"com.aiarm.syt";
     self.channelIdentifierField.stringValue = @"2";
     self.appNameField.stringValue = @"速易通";
@@ -679,7 +684,7 @@
  */
 - (void)setupYunfutong
 {
-    self.appVersionField.stringValue = @"2.0.0";
+    self.appVersionField.stringValue = defaultVersion;
     self.appBundleIdentifierField.stringValue = @"com.aiarm.yunfutong";
     self.channelIdentifierField.stringValue = @"6";
     self.appNameField.stringValue = @"云付通";
@@ -692,6 +697,26 @@
     self.profileNameField.stringValue = @"yunfutong_distribution";
     
     [self reSetupFieldWithSignString:@"yunfutong"];
+}
+
+/**
+ *  势刷支付配置项
+ */
+- (void)setupShishua
+{
+    self.appVersionField.stringValue = defaultVersion;
+    self.appBundleIdentifierField.stringValue = @"com.aiarm.shishua";
+    self.channelIdentifierField.stringValue = @"9";
+    self.appNameField.stringValue = @"势刷支付";
+    self.appDomainField.stringValue = @"shishua.alllpay.com";
+    self.appTelephoneField.stringValue = @"400-000-0000";
+    self.homeTitleField.stringValue = @"势刷支付";
+    self.weixinAccountField.stringValue = @"";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/shishua/";
+    self.ipaNameField.stringValue = @"shishua";
+    self.profileNameField.stringValue = @"shishua_distribution";
+    
+    [self reSetupFieldWithSignString:@"shishua"];
 }
 
 /**
@@ -719,7 +744,7 @@
     NSAlert *alert = [NSAlert alertWithMessageText:@"您确定要重置所有配置吗？" defaultButton:@"确定" alternateButton:@"取消" otherButton:nil informativeTextWithFormat:@"重置后会恢复默认配置"];
     
     if([alert runModal] == NSAlertDefaultReturn) {
-        NSArray *array = @[@"difu", @"jumi", @"kakaleshua", @"chengqiaobao", @"suyitong", @"yunfutong"];
+        NSArray *array = @[@"difu", @"jumi", @"kakaleshua", @"chengqiaobao", @"suyitong", @"yunfutong", @"shishua"];
         for (NSString *signString in array) {
             [[NSUserDefaults standardUserDefaults] setObject:nil forKey:signString];
         }

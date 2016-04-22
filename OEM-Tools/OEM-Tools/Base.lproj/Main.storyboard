@@ -925,12 +925,12 @@
                                                 </textField>
                                                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTk-1A-P2Y">
                                                     <rect key="frame" x="202" y="399" width="206" height="26"/>
-                                                    <popUpButtonCell key="cell" type="push" title="嘀付" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="iXB-ak-k6y" id="yEp-Co-djw">
+                                                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="yEp-Co-djw">
                                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="menu"/>
                                                         <menu key="menu" id="7E1-8W-4Q0">
                                                             <items>
-                                                                <menuItem title="嘀付" state="on" id="iXB-ak-k6y" userLabel="嘀付">
+                                                                <menuItem title="嘀付" id="iXB-ak-k6y" userLabel="嘀付">
                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                 </menuItem>
                                                                 <menuItem title="聚米" id="hjR-al-5eb">
@@ -946,6 +946,9 @@
                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                 </menuItem>
                                                                 <menuItem title="云付通" id="kGE-2c-1Y6">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                </menuItem>
+                                                                <menuItem title="势刷支付" id="zCD-7p-Lz1" userLabel="势刷支付">
                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                 </menuItem>
                                                             </items>
