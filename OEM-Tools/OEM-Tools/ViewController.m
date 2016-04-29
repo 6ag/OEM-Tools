@@ -149,6 +149,9 @@
         case 6:
             [self setupShishua];
             break;
+        case 7:
+            [self setupAofu];
+            break;
         default:
             break;
     }
@@ -717,6 +720,26 @@
     self.profileNameField.stringValue = @"shishua_distribution";
     
     [self reSetupFieldWithSignString:@"shishua"];
+}
+
+/**
+ *  奥付配置项
+ */
+- (void)setupAofu
+{
+    self.appVersionField.stringValue = defaultVersion;
+    self.appBundleIdentifierField.stringValue = @"com.aiarm.aofu";
+    self.channelIdentifierField.stringValue = @"10";
+    self.appNameField.stringValue = @"奥付";
+    self.appDomainField.stringValue = @"aofu.alllpay.com";
+    self.appTelephoneField.stringValue = @"4008-872-728";
+    self.homeTitleField.stringValue = @"奥付";
+    self.weixinAccountField.stringValue = @"";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/aofu/";
+    self.ipaNameField.stringValue = @"aofu";
+    self.profileNameField.stringValue = @"aofu_distribution";
+    
+    [self reSetupFieldWithSignString:@"aufu"];
 }
 
 /**

@@ -951,6 +951,9 @@
                                                                 <menuItem title="势刷支付" id="zCD-7p-Lz1" userLabel="势刷支付">
                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                 </menuItem>
+                                                                <menuItem title="奥付" id="BUc-Ti-27y" userLabel="奥付">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                </menuItem>
                                                             </items>
                                                         </menu>
                                                     </popUpButtonCell>
