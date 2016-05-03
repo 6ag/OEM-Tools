@@ -261,7 +261,7 @@
     NSString *configFile_path = [self.projectLabel.stringValue stringByAppendingString:configFle];
     
     // 替换渠道标识
-    if ([self replaceConfigStringWithSrc:configFile_path Pattern:@"(?<=#define channelIdentifier )(@\"(\\d)\")" template:[NSString stringWithFormat:@"@\"%@\"", self.channelIdentifierField.stringValue]]) {
+    if ([self replaceConfigStringWithSrc:configFile_path Pattern:@"(?<=#define channelIdentifier )(@\"(\\d{1,2})\")" template:[NSString stringWithFormat:@"@\"%@\"", self.channelIdentifierField.stringValue]]) {
         // 成功后加入数据源数组
         [self.results addObject:[NSString stringWithFormat:@"替换【渠道标识】OK"]];
     } else {
