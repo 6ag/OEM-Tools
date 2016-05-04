@@ -152,6 +152,9 @@
         case 7:
             [self setupAofu];
             break;
+        case 8:
+            [self setupYinyuan];
+            break;
         default:
             break;
     }
@@ -740,6 +743,26 @@
     self.profileNameField.stringValue = @"aofu_distribution";
     
     [self reSetupFieldWithSignString:@"aufu"];
+}
+
+/**
+ *  饮源支付配置
+ */
+- (void)setupYinyuan
+{
+    self.appVersionField.stringValue = defaultVersion;
+    self.appBundleIdentifierField.stringValue = @"com.aiarm.yinyuan";
+    self.channelIdentifierField.stringValue = @"11";
+    self.appNameField.stringValue = @"饮源支付";
+    self.appDomainField.stringValue = @"aofu.alllpay.com";
+    self.appTelephoneField.stringValue = @"4008-000-000";
+    self.homeTitleField.stringValue = @"饮源支付";
+    self.weixinAccountField.stringValue = @"";
+    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/yinyuan/";
+    self.ipaNameField.stringValue = @"yinyuan";
+    self.profileNameField.stringValue = @"yinyuan_distribution";
+    
+    [self reSetupFieldWithSignString:@"yinyuan"];
 }
 
 /**

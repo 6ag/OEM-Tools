@@ -954,6 +954,9 @@
                                                                 <menuItem title="奥付" id="BUc-Ti-27y" userLabel="奥付">
                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                 </menuItem>
+                                                                <menuItem title="饮源支付" id="w59-vm-016" userLabel="饮源支付">
+                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                </menuItem>
                                                             </items>
                                                         </menu>
                                                     </popUpButtonCell>
