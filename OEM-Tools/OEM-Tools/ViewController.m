@@ -755,7 +755,7 @@
     self.channelIdentifierField.stringValue = @"11";
     self.appNameField.stringValue = @"饮源支付";
     self.appDomainField.stringValue = @"aofu.alllpay.com";
-    self.appTelephoneField.stringValue = @"4008-000-000";
+    self.appTelephoneField.stringValue = @"020-3893 8300";
     self.homeTitleField.stringValue = @"饮源支付";
     self.weixinAccountField.stringValue = @"";
     self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/yinyuan/";

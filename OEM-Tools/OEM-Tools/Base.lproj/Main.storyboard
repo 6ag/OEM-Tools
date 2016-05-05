@@ -727,18 +727,18 @@
                                 <tabViewItems>
                                     <tabViewItem label="项目参数" identifier="1" id="niM-r4-NfQ">
                                         <view key="view" ambiguous="YES" id="n5U-dV-yx9">
-                                            <rect key="frame" x="10" y="33" width="537" height="472"/>
+                                            <rect key="frame" x="10" y="33" width="162" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDT-Dq-2Dm">
-                                                    <rect key="frame" x="202" y="441" width="139" height="18"/>
+                                                    <rect key="frame" x="202" y="-31" width="139" height="18"/>
                                                     <buttonCell key="cell" type="check" title="勾选后打包生产环境" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Nnw-5V-DHH">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                     </buttonCell>
                                                 </button>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4d-Lo-ryg">
-                                                    <rect key="frame" x="204" y="370" width="316" height="22"/>
+                                                    <rect key="frame" x="204" y="-102" width="316" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="gZe-3w-c5e">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -746,7 +746,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1A3-kE-K6g">
-                                                    <rect key="frame" x="204" y="338" width="316" height="22"/>
+                                                    <rect key="frame" x="204" y="-134" width="316" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="BZR-vW-6hf">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -754,7 +754,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zn-Ba-2iI">
-                                                    <rect key="frame" x="204" y="275" width="316" height="22"/>
+                                                    <rect key="frame" x="204" y="-197" width="316" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Zmk-Nz-LTb">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -762,7 +762,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ktF-8r-sXU">
-                                                    <rect key="frame" x="204" y="241" width="316" height="22"/>
+                                                    <rect key="frame" x="204" y="-231" width="316" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="QnG-wk-02u">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -770,7 +770,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Qo-SS-qrC">
-                                                    <rect key="frame" x="204" y="209" width="316" height="22"/>
+                                                    <rect key="frame" x="204" y="-263" width="316" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="FsG-3q-es7">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -778,7 +778,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5X-Yf-7rm">
-                                                    <rect key="frame" x="204" y="178" width="316" height="22"/>
+                                                    <rect key="frame" x="204" y="-294" width="316" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8Xh-MC-Sv0">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -786,7 +786,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uC-Ar-HMO">
-                                                    <rect key="frame" x="204" y="145" width="316" height="22"/>
+                                                    <rect key="frame" x="204" y="-327" width="316" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="M8V-Eu-iRY">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -794,7 +794,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxa-DJ-lmZ">
-                                                    <rect key="frame" x="135" y="373" width="63" height="17"/>
+                                                    <rect key="frame" x="135" y="-99" width="63" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="APP 名称:" id="6h5-Aa-zP4">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -802,7 +802,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xz8-SP-zDs">
-                                                    <rect key="frame" x="131" y="404" width="67" height="17"/>
+                                                    <rect key="frame" x="131" y="-68" width="67" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="选择 OEM:" id="2MD-j4-eDk">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -810,7 +810,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dea-f1-g2U">
-                                                    <rect key="frame" x="62" y="341" width="136" height="17"/>
+                                                    <rect key="frame" x="62" y="-131" width="136" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="APP Bundle Identifier:" id="fOK-Vl-SKV">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -818,7 +818,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLM-tL-siW">
-                                                    <rect key="frame" x="104" y="278" width="94" height="17"/>
+                                                    <rect key="frame" x="104" y="-194" width="94" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="OEM 渠道标识:" id="aHi-xF-Nhw">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -826,7 +826,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-VN-Brl">
-                                                    <rect key="frame" x="204" y="305" width="316" height="22"/>
+                                                    <rect key="frame" x="204" y="-167" width="316" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="u6f-B1-3Bu">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -834,7 +834,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFB-Bc-5IA">
-                                                    <rect key="frame" x="122" y="308" width="76" height="17"/>
+                                                    <rect key="frame" x="122" y="-164" width="76" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="APP 版本号:" id="9YM-wL-jQT">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -842,7 +842,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Slk-KA-sor">
-                                                    <rect key="frame" x="128" y="245" width="68" height="17"/>
+                                                    <rect key="frame" x="128" y="-227" width="68" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="OEM 域名:" id="2RS-18-6xA">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -850,7 +850,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-Um-YOB">
-                                                    <rect key="frame" x="136" y="212" width="62" height="17"/>
+                                                    <rect key="frame" x="136" y="-260" width="62" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="400 电话:" id="TWX-SQ-e7S">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -858,7 +858,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z4D-eh-Gst">
-                                                    <rect key="frame" x="109" y="182" width="89" height="17"/>
+                                                    <rect key="frame" x="109" y="-290" width="89" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="APP 首页标题:" id="SEU-GA-Lf6">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -866,7 +866,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-jy-BN9">
-                                                    <rect key="frame" x="136" y="148" width="60" height="17"/>
+                                                    <rect key="frame" x="136" y="-324" width="60" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="微信账号:" id="tf5-9M-kef">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -874,13 +874,13 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Lg7-Kw-LYb">
-                                                    <rect key="frame" x="17" y="134" width="510" height="5"/>
+                                                    <rect key="frame" x="17" y="-338" width="510" height="5"/>
                                                     <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                                     <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <font key="titleFont" metaFont="system"/>
                                                 </box>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="YHy-PL-zbL">
-                                                    <rect key="frame" x="196" y="89" width="66" height="32"/>
+                                                    <rect key="frame" x="196" y="-383" width="66" height="32"/>
                                                     <buttonCell key="cell" type="push" title="选择" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eIT-Nv-95O">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -890,7 +890,7 @@
                                                     </connections>
                                                 </button>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zs-bQ-CTk">
-                                                    <rect key="frame" x="106" y="44" width="90" height="17"/>
+                                                    <rect key="frame" x="106" y="-428" width="90" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="OEM素材路径:" id="g1e-ax-Q5f">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -898,7 +898,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="vn6-nQ-XTd">
-                                                    <rect key="frame" x="196" y="35" width="66" height="32"/>
+                                                    <rect key="frame" x="196" y="-437" width="66" height="32"/>
                                                     <buttonCell key="cell" type="push" title="选择" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="blL-v5-WgZ">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -908,7 +908,7 @@
                                                     </connections>
                                                 </button>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8x2-zN-xx3">
-                                                    <rect key="frame" x="15" y="17" width="507" height="17"/>
+                                                    <rect key="frame" x="15" y="-455" width="507" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="暂未选择" id="ZLE-g8-KLe">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -916,7 +916,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwr-WO-nQw">
-                                                    <rect key="frame" x="15" y="71" width="507" height="17"/>
+                                                    <rect key="frame" x="15" y="-401" width="507" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="暂未选择" id="hOl-Hq-kiF">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -924,7 +924,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTk-1A-P2Y">
-                                                    <rect key="frame" x="202" y="399" width="206" height="26"/>
+                                                    <rect key="frame" x="202" y="-73" width="206" height="26"/>
                                                     <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="yEp-Co-djw">
                                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="menu"/>
@@ -965,7 +965,7 @@
                                                     </connections>
                                                 </popUpButton>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JS8-97-cDp">
-                                                    <rect key="frame" x="103" y="98" width="95" height="17"/>
+                                                    <rect key="frame" x="103" y="-374" width="95" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="项目路径(通用):" id="eyS-nq-ALe">
                                                         <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
