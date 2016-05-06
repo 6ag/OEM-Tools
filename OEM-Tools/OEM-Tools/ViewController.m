@@ -444,7 +444,6 @@
     system([[@"open " stringByAppendingString:[self getPathWithfileString:self.exportPathLabel.stringValue]] UTF8String]);
 }
 
-
 /**
  *  匹配字符串中的结果并替换
  *
@@ -742,7 +741,7 @@
     self.ipaNameField.stringValue = @"aofu";
     self.profileNameField.stringValue = @"aofu_distribution";
     
-    [self reSetupFieldWithSignString:@"aufu"];
+    [self reSetupFieldWithSignString:@"aofu"];
 }
 
 /**
@@ -755,7 +754,7 @@
     self.channelIdentifierField.stringValue = @"11";
     self.appNameField.stringValue = @"饮源支付";
     self.appDomainField.stringValue = @"aofu.alllpay.com";
-    self.appTelephoneField.stringValue = @"020-3893 8300";
+    self.appTelephoneField.stringValue = @"020-3893-8300";
     self.homeTitleField.stringValue = @"饮源支付";
     self.weixinAccountField.stringValue = @"";
     self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/yinyuan/";
@@ -790,7 +789,7 @@
     NSAlert *alert = [NSAlert alertWithMessageText:@"您确定要重置所有配置吗？" defaultButton:@"确定" alternateButton:@"取消" otherButton:nil informativeTextWithFormat:@"重置后会恢复默认配置"];
     
     if([alert runModal] == NSAlertDefaultReturn) {
-        NSArray *array = @[@"difu", @"jumi", @"kakaleshua", @"chengqiaobao", @"suyitong", @"yunfutong", @"shishua"];
+        NSArray *array = @[@"difu", @"jumi", @"kakaleshua", @"chengqiaobao", @"suyitong", @"yunfutong", @"shishua", @"aofu", @"yinyuan"];
         for (NSString *signString in array) {
             [[NSUserDefaults standardUserDefaults] setObject:nil forKey:signString];
         }
