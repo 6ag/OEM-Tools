@@ -5,25 +5,25 @@
 #################################################
 
 # 生成ipa文件的名称
-IPA_NAME="difu2.0.0"
+IPA_NAME="difu2.0.6"
 
 # 生成ipa的目录
-APP_DIR="/Users/feng/Desktop/"
+APP_DIR="/Users/paychina-ios02/Desktop/"
 
 # 项目的目录
-PROJECT_DIR="/Users/feng/Desktop/PayChinaPospIOS_test/PayChinaPospIOS/"
+PROJECT_DIR="/Users/paychina-ios02/PayChinaPospIOS/PayChinaPospIOS/"
 
 # keychain登陆密码
-LOGIN_PASSWORD="44334512"
+LOGIN_PASSWORD="ws168"
 
 # 描述文件的名字
-PROFILE_NAME="mypaychinaapp"
+PROFILE_NAME="aiarm_distribution"
 
 # 电脑用户名
-USER_NAME="feng"
+USER_NAME="paychina-ios02"
 
 # 电脑密码
-PASS_WORD="44334512"
+PASS_WORD="ws168"
 
 # 发布渠道
 CHANNEL=U_CHANNEL_DONGBENBEN_CONFIG

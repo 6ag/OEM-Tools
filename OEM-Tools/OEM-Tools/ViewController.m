@@ -2,8 +2,8 @@
 //  ViewController.m
 //  OEM-Tools
 //
-//  Created by zhoujianfeng on 16/3/14.
-//  Copyright © 2016年 zhoujianfeng. All rights reserved.
+//  Created by zhoujianpaychina-ios02 on 16/3/14.
+//  Copyright © 2016年 zhoujianpaychina-ios02. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -597,9 +597,9 @@
     self.appTelephoneField.stringValue = @"400-615-8825";
     self.homeTitleField.stringValue = @"嘀付-理财版";
     self.weixinAccountField.stringValue = @"aiarmpay";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/difu/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/difu/";
     self.ipaNameField.stringValue = @"difu";
-    self.profileNameField.stringValue = @"mypaychinaapp";
+    self.profileNameField.stringValue = @"aiarm_distribution";
     
     [self reSetupFieldWithSignString:@"difu"];
 }
@@ -617,7 +617,7 @@
     self.appTelephoneField.stringValue = @"400-808-7079";
     self.homeTitleField.stringValue = @"聚米-理财版";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/jumi/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/jumi/";
     self.ipaNameField.stringValue = @"jumi";
     self.profileNameField.stringValue = @"jumi_distribution";
     
@@ -637,7 +637,7 @@
     self.appTelephoneField.stringValue = @"400-036-6772";
     self.homeTitleField.stringValue = @"卡卡乐刷";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/kakaleshua/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/kakaleshua/";
     self.ipaNameField.stringValue = @"kakaleshua";
     self.profileNameField.stringValue = @"kakale_distribution";
     
@@ -657,7 +657,7 @@
     self.appTelephoneField.stringValue = @"400-6649-666";
     self.homeTitleField.stringValue = @"诚钱包";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/chengqianbao/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/chengqianbao/";
     self.ipaNameField.stringValue = @"chengqianbao";
     self.profileNameField.stringValue = @"chengqiaobao_distribution";
     
@@ -677,7 +677,7 @@
     self.appTelephoneField.stringValue = @"400-683-6985";
     self.homeTitleField.stringValue = @"速易通";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/suyitong/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/suyitong/";
     self.ipaNameField.stringValue = @"suyitong";
     self.profileNameField.stringValue = @"suyitong_distribution";
     
@@ -697,7 +697,7 @@
     self.appTelephoneField.stringValue = @"400-085-3882";
     self.homeTitleField.stringValue = @"云付通";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/yunfutong/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/yunfutong/";
     self.ipaNameField.stringValue = @"yunfutong";
     self.profileNameField.stringValue = @"yunfutong_distribution";
     
@@ -717,7 +717,7 @@
     self.appTelephoneField.stringValue = @"400-965-7977";
     self.homeTitleField.stringValue = @"势刷支付";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/shishua/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/shishua/";
     self.ipaNameField.stringValue = @"shishua";
     self.profileNameField.stringValue = @"shishua_distribution";
     
@@ -737,7 +737,7 @@
     self.appTelephoneField.stringValue = @"4008-872-728";
     self.homeTitleField.stringValue = @"奥付";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/aofu/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/aofu/";
     self.ipaNameField.stringValue = @"aofu";
     self.profileNameField.stringValue = @"aofu_distribution";
     
@@ -757,7 +757,7 @@
     self.appTelephoneField.stringValue = @"020-3893-8300";
     self.homeTitleField.stringValue = @"饮源支付";
     self.weixinAccountField.stringValue = @"";
-    self.configureLabel.stringValue = @"file:///Users/feng/Desktop/OEM/yinyuan/";
+    self.configureLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/OEM/yinyuan/";
     self.ipaNameField.stringValue = @"yinyuan";
     self.profileNameField.stringValue = @"yinyuan_distribution";
     
@@ -769,11 +769,11 @@
  */
 - (void)reSetupFieldWithSignString:(NSString *)signString
 {
-    self.projectLabel.stringValue = @"file:///Users/feng/Work/PayChinaPospIOS/PayChinaPospIOS/";
-    self.exportPathLabel.stringValue = @"file:///Users/feng/Desktop/";
-    self.keychainPasswordField.stringValue = @"44334512";
-    self.currentUserNameField.stringValue = @"feng";
-    self.currentPasswordField.stringValue = @"44334512";
+    self.projectLabel.stringValue = @"file:///Users/paychina-ios02/PayChinaPospIOS/PayChinaPospIOS/";
+    self.exportPathLabel.stringValue = @"file:///Users/paychina-ios02/Desktop/";
+    self.keychainPasswordField.stringValue = @"ws168";
+    self.currentUserNameField.stringValue = @"paychina-ios02";
+    self.currentPasswordField.stringValue = @"ws168";
     
     self.signString = signString;
     
