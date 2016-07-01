@@ -44,6 +44,16 @@ CONFIGURATION="Release"
 if [ `echo ${ISTEST} |wc -c` -ge "2" ] ;then ISTEST_STR="_test"; else ISTEST_STR=""; fi;
 IPA_PREFIX_NAME=${PROFILE_NAME}${ISTEST_STR}
 
+# 老id
+OLD_PRODUCT_BUNDLE_IDENTIFIER1="com.aiarm.www"
+OLD_PRODUCT_BUNDLE_IDENTIFIER2="com.aiarm.jumi"
+OLD_PRODUCT_BUNDLE_IDENTIFIER3="com.aiarm.kakale"
+OLD_PRODUCT_BUNDLE_IDENTIFIER4="com.aiarm.chengqiaobao"
+OLD_PRODUCT_BUNDLE_IDENTIFIER5="com.aiarm.syt"
+OLD_PRODUCT_BUNDLE_IDENTIFIER6="com.aiarm.yunfutong"
+OLD_PRODUCT_BUNDLE_IDENTIFIER7="com.aiarm.shishua"
+OLD_PRODUCT_BUNDLE_IDENTIFIER8="com.aiarm.aofu"
+OLD_PRODUCT_BUNDLE_IDENTIFIER9="com.aiarm.yinyuan"
 
 #################################################
 #####       执行代码（execute）     ################
@@ -84,13 +94,15 @@ sudo -u${USER_NAME} -p${PASS_WORD} xcodebuild clean -workspace ${PROJECT_NAME}.x
 || failed "xcodebuild clean"
 
 # 修改build setting 里的product bundle identifier
-sed -i '' 's/com.aiarm.yinyuan/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
-sed -i '' 's/com.aiarm.aofu/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
-sed -i '' 's/com.aiarm.shishua/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
-sed -i '' 's/com.aiarm.yunfutong/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
-sed -i '' 's/com.aiarm.syt/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
-sed -i '' 's/com.aiarm.chengqiaobao/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
-sed -i '' 's/com.aiarm.kakale/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER1}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER2}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER3}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER4}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER5}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER6}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER7}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER8}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
+sed -i "" "s/${OLD_PRODUCT_BUNDLE_IDENTIFIER9}/${PRODUCT_BUNDLE_IDENTIFIER}/g" ${PROJECT_NAME}.xcodeproj/project.pbxproj
 
 # 归档
 sudo -u${USER_NAME} -p${PASS_WORD} xcodebuild archive -workspace ${PROJECT_NAME}.xcworkspace \
