@@ -60,10 +60,10 @@ script_dir_relative=`dirname $0`
 script_dir=`cd ${script_dir_relative}; pwd`
 echo "script_dir = ${script_dir}"
 
-# unlock login keygen
+# 解锁钥匙串
 security unlock-keychain -p ${LOGIN_PASSWORD} ${LOGIN_KEYCHAIN} || failed "unlock-keygen"
 
-# get mobileprovision file
+# 获取描述文件
 cd ~/Library/MobileDevice/Provisioning\ Profiles
 find .|xargs grep -ri ${PROFILE_NAME} || failed "mobileprovision not found!!"
 MOBILE_PROVISION_FILE_NAME=`find .|xargs grep -ri "${PROFILE_NAME}"|head -1|sed 's/Binary\ file\ .\/\(.*\)\.mobileprovision\ matches/\1/g'`
@@ -82,6 +82,15 @@ mkdir -pv bin
 sudo -u${USER_NAME} -p${PASS_WORD} xcodebuild clean -workspace ${PROJECT_NAME}.xcworkspace \
 -scheme ${SCHEME_NAME} \
 || failed "xcodebuild clean"
+
+# 修改build setting 里的product bundle identifier
+sed -i '' 's/com.aiarm.yinyuan/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
+sed -i '' 's/com.aiarm.aofu/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
+sed -i '' 's/com.aiarm.shishua/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
+sed -i '' 's/com.aiarm.yunfutong/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
+sed -i '' 's/com.aiarm.syt/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
+sed -i '' 's/com.aiarm.chengqiaobao/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
+sed -i '' 's/com.aiarm.kakale/${PRODUCT_BUNDLE_IDENTIFIER}/g' project.pbxproj
 
 # 归档
 sudo -u${USER_NAME} -p${PASS_WORD} xcodebuild archive -workspace ${PROJECT_NAME}.xcworkspace \
